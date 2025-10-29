@@ -1,0 +1,7 @@
+## 📊 Dataset Information
+The datasets used in this project are stored externally due to size limits on GitHub.
+
+- [DelayedFlights.csv](https://drive.google.com/drive/folders/1LUrs6JPc8aCYF6Y0iRW7IyXKRuVeoE8t?usp=drive_link)
+- [flight_delays.csv](https://drive.google.com/drive/folders/1LUrs6JPc8aCYF6Y0iRW7IyXKRuVeoE8t?usp=drive_link)
+- [flights_sample_3m.csv](https://drive.google.com/drive/folders/1LUrs6JPc8aCYF6Y0iRW7IyXKRuVeoE8t?usp=drive_link)
+- [Processed Parquet File](https://drive.google.com/drive/folders/1LUrs6JPc8aCYF6Y0iRW7IyXKRuVeoE8t?usp=drive_link)
