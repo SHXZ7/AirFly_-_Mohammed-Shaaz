@@ -349,40 +349,215 @@ This project analyzes flight delay patterns across multiple datasets spanning fr
 
 ---
 
-### 📅 Next Steps (Week 3 Preview)
+## � Week 3 Report – Exploratory Data Analysis (EDA)
 
-1. **Exploratory Data Analysis (EDA)**
-   - Delay distribution analysis by carrier, route, time
-   - Identify peak delay periods
-   - Correlation analysis between features
-   - Visualize temporal patterns
+**Report Date:** October 30, 2025  
+**Status:** ✅ Completed
 
-2. **Statistical Analysis**
-   - Hypothesis testing for delay causes
-   - Compare carrier performance
-   - Seasonal trend analysis
-   - Route-specific insights
+### 🎯 Week 3 Goals
+- Perform comprehensive univariate analysis on all key variables
+- Conduct bivariate analysis to understand relationships between features
+- Visualize temporal patterns in flight operations and delays
+- Analyze delay distributions and identify key insights
+- Create enhanced correlation analysis with interpretable insights
+
+---
+
+### 📈 EDA Analysis Completed
+
+#### 1. **Temporal Flight Patterns**
+
+✅ **Monthly Flight Distribution**
+- Analyzed seasonal patterns in flight volume across 12 months
+- Visualization: Count plot showing flight distribution by month
+- Purpose: Identify peak travel seasons and capacity planning insights
+
+✅ **Day of Week Analysis**
+- Examined flight patterns across weekdays vs. weekends
+- Visualization: Count plot with ordered days (Monday-Sunday)
+- Purpose: Understanding business vs. leisure travel patterns
+
+✅ **Hourly Departure Patterns**
+- Analyzed flight distribution across 24 hours of the day
+- Visualization: Histogram with KDE overlay showing departure hour preferences
+- Purpose: Identify peak departure times and airport congestion periods
+
+#### 2. **Airline Performance Analysis**
+
+✅ **Top Airlines by Flight Volume**
+- Identified top 10 airlines by total flight count
+- Visualization: Horizontal bar plot ranking carriers by volume
+- Purpose: Market share analysis and operational scale comparison
+
+✅ **Airline Delay Performance**
+- Analyzed average delay times by carrier
+- Visualization: Horizontal bar plot showing top 10 airlines by average delay
+- Purpose: Carrier reliability comparison and performance benchmarking
+
+#### 3. **Delay Pattern Analysis**
+
+✅ **Total Delay Distribution**
+- Examined overall delay distribution across all flights
+- Visualization: Histogram showing delay minute distribution
+- Purpose: Understanding delay severity and frequency patterns
+
+✅ **Temporal Delay Patterns**
+- **Monthly Delay Trends**: Line plot showing average delay by month
+- **Hourly Delay Patterns**: Line plot showing average delay by departure hour
+- **Daily Delay Patterns**: Box plot showing delay distribution by day of week
+- Purpose: Identify peak delay periods and operational bottlenecks
+
+#### 4. **Enhanced Correlation Analysis**
+
+✅ **Comprehensive Correlation Matrix**
+- Created lower-triangle correlation heatmap to avoid redundancy
+- Enhanced visualization with:
+  - Red-Blue diverging colormap for better interpretation
+  - Proper centering at zero correlation
+  - Improved annotations and styling
+  - Larger figure size for better readability
+
+✅ **Automated Correlation Insights**
+- **Top 5 Strongest Positive Correlations**: Identified variables that move together
+- **Top 5 Strongest Negative Correlations**: Identified inversely related variables
+- **Delay-Specific Analysis**: Focused analysis on variables most correlated with total delay
+
+✅ **Statistical Summary Export**
+- Generated comprehensive statistical summary of all variables
+- Exported to CSV format for external analysis and reporting
+
+---
+
+### 📊 Key EDA Insights Generated
+
+#### Temporal Insights:
+1. **Seasonal Patterns**: Flight volume variation across months
+2. **Weekly Patterns**: Business vs. leisure travel distribution
+3. **Daily Patterns**: Peak departure hours and airport utilization
+4. **Delay Timing**: When delays are most likely to occur
+
+#### Operational Insights:
+1. **Carrier Performance**: Ranking airlines by reliability and volume
+2. **Delay Severity**: Distribution and magnitude of delays
+3. **Route Efficiency**: Understanding delay patterns by time and carrier
+
+#### Statistical Insights:
+1. **Variable Relationships**: Which factors are most strongly correlated
+2. **Delay Predictors**: Key variables that correlate with delays
+3. **Data Quality**: Comprehensive statistical overview of all variables
+
+---
+
+### 🎨 Visualization Techniques Used
+
+| Analysis Type | Visualization | Purpose |
+|---------------|---------------|---------|
+| **Categorical Counts** | Count plots | Flight distribution patterns |
+| **Continuous Distributions** | Histograms with KDE | Delay and time distributions |
+| **Temporal Trends** | Line plots | Trends over time periods |
+| **Comparative Analysis** | Horizontal bar plots | Ranking and comparison |
+| **Distribution Comparison** | Box plots | Delay patterns by categories |
+| **Correlation Analysis** | Enhanced heatmap | Variable relationships |
+
+---
+
+### 📁 EDA Deliverables
+
+✅ **Comprehensive Visualizations**
+- 9 different chart types covering all major analysis dimensions
+- Professional styling with consistent color palettes
+- Clear titles, labels, and legends for interpretability
+
+✅ **Statistical Analysis**
+- Enhanced correlation matrix with automated insights
+- Top correlation identification (positive and negative)
+- Delay-specific correlation analysis
+
+✅ **Data Export**
+- `summary/EDA_summary.csv` - Complete statistical summary
+- Ready for further analysis and reporting
+
+✅ **Documentation**
+- Detailed markdown cells explaining each analysis section
+- Clear objectives and interpretations for each visualization
+
+---
+
+### 🔍 Analysis Methodology
+
+#### Univariate Analysis:
+- Distribution analysis for continuous variables
+- Frequency analysis for categorical variables
+- Statistical summaries and outlier identification
+
+#### Bivariate Analysis:
+- Temporal relationship exploration
+- Categorical vs. continuous variable analysis
+- Correlation analysis between numerical variables
+
+#### Visualization Standards:
+- Consistent color schemes and styling
+- Appropriate chart types for data types
+- Clear annotations and professional formatting
+
+---
+
+### 📈 Week 3 Key Metrics
+
+| Metric | Value |
+|--------|-------|
+| **Visualizations Created** | 9+ comprehensive charts |
+| **Analysis Dimensions** | Temporal, Categorical, Correlation |
+| **Statistical Insights** | Top 5 positive/negative correlations |
+| **Export Files** | 1 (EDA summary CSV) |
+| **Notebook Cells** | 22+ analysis cells |
+
+---
+
+### ✅ Week 3 Deliverables
+
+- [x] Complete temporal pattern analysis (monthly, daily, hourly)
+- [x] Comprehensive airline performance analysis
+- [x] Delay distribution and pattern analysis
+- [x] Enhanced correlation analysis with automated insights
+- [x] Professional visualizations with consistent styling
+- [x] Statistical summary export for further analysis
+- [x] Well-documented analysis with clear objectives
+- [x] Interpretable insights for business decision-making
+
+---
+
+### 📅 Next Steps (Week 4 Preview)
+
+1. **Statistical Hypothesis Testing**
+   - Test significance of delay differences between carriers
+   - Seasonal delay pattern statistical validation
+   - Route-specific performance testing
+
+2. **Advanced Analytics**
+   - Predictive modeling for delay prediction
+   - Clustering analysis for similar routes/carriers
+   - Time series analysis for trend forecasting
 
 3. **Data Integration**
-   - Apply same preprocessing to 2019-2023 dataset
-   - Apply same preprocessing to 2024 sample dataset
-   - Merge datasets with standardized schema
-   - Create unified multi-year dataset
+   - Apply same EDA methodology to 2019-2023 dataset
+   - Apply same EDA methodology to 2024 sample dataset
+   - Comparative analysis across different time periods
 
-4. **Advanced Feature Engineering**
-   - Create lag features for time series
-   - Engineer weather-related proxies
-   - Create airport congestion metrics
-   - Holiday/special event indicators
+4. **Business Intelligence**
+   - Create executive summary dashboards
+   - Develop actionable recommendations
+   - Cost impact analysis of delays
 
 ---
 
 ### 📂 Project Structure
 
 ```
-infosys/
-├── dataprpocessing.ipynb         # Week 1: Initial exploration
-├── data_pro.ipynb                # Week 2: Preprocessing & feature engineering
+Mohammed_Shaaz/
+├── data_1.ipynb                   # Week 1: Initial exploration & data loading
+├── data_2.ipynb                   # Week 2: Preprocessing & feature engineering
+├── data_3.ipynb                   # Week 3: Exploratory Data Analysis (EDA)
 ├── dataset/
 │   ├── DelayedFlights.csv        # 2008 data (1.9M rows)
 │   ├── flight_delays.csv         # 2019-23 data (1.7M rows)
@@ -390,6 +565,8 @@ infosys/
 ├── processed/
 │   ├── delayedflights_2008_processed.parquet  # Cleaned & engineered
 │   └── sample_10k.parquet                      # Quick testing sample
+├── summary/
+│   └── EDA_summary.csv           # Statistical summary from Week 3 EDA
 └── README.md                      # Project documentation
 ```
 
@@ -419,5 +596,5 @@ Project developed as part of Infosys data analytics initiative.
 
 ---
 
-**Last Updated:** October 25, 2025  
-**Current Week:** Week 2 - Preprocessing & Feature Engineering ✅ Complete
+**Last Updated:** October 30, 2025  
+**Current Week:** Week 3 - Exploratory Data Analysis (EDA) ✅ Complete
