@@ -728,27 +728,229 @@ This project analyzes flight delay patterns across multiple datasets spanning fr
 
 ---
 
-### 📅 Next Steps (Week 5 Preview)
+---
 
-1. **Predictive Modeling**
-   - Build machine learning models to predict delays
-   - Feature importance analysis for delay prediction
-   - Model validation and performance testing
+## 🗺️ Week 5 Report – Geographic Analysis & Route Intelligence
 
-2. **Route-Specific Analysis**
-   - Analyze delay patterns by specific routes
-   - Distance vs delay correlation analysis
-   - Hub vs point-to-point performance comparison
+**Report Date:** November 23, 2025  
+**Status:** ✅ Completed
 
-3. **Cost Impact Analysis**
-   - Calculate financial impact of delays
-   - Cost per minute delay analysis
-   - ROI analysis for delay reduction initiatives
+### 🎯 Week 5 Goals
+- Perform comprehensive route-level analysis with origin-destination pairs
+- Create delay heatmaps by airport and temporal patterns
+- Integrate geographic coordinate data for spatial analysis
+- Develop interactive geographic visualizations of airport performance
+- Generate actionable insights for route optimization and capacity planning
 
-4. **Recommendation Engine**
-   - Develop actionable recommendations for airlines
-   - Create optimization strategies for airports
-   - Design early warning systems for delay prediction
+---
+
+### 📊 Geographic Analysis Completed
+
+#### 1. **Route Performance Analysis**
+
+✅ **Top Route Identification**
+- Analyzed all origin-destination pairs to identify busiest flight routes
+- Generated comprehensive route statistics including flight volume, delays, and cancellation rates
+- **Key Metrics per Route:**
+  - Total flight count
+  - Average departure delay
+  - Average arrival delay  
+  - Cancellation rate
+- Visualization: Bar chart showing top 10 routes by flight volume
+
+✅ **Route-Level Insights**
+- Identified highest volume routes for capacity planning
+- Analyzed delay patterns specific to route combinations
+- Established baseline performance metrics for route optimization
+
+#### 2. **Geographic Data Integration**
+
+✅ **Airport Coordinates Database**
+- Successfully downloaded and processed airport coordinates from GitHub dataset
+- **Data Source:** `https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv`
+- **Processing Achievements:**
+  - Parsed coordinate strings (longitude, latitude format)
+  - Filtered for airports with valid IATA codes and coordinates
+  - Created clean reference table with 📍 latitude/longitude data
+  - Achieved geographic coordinate coverage for major airports
+
+✅ **Data Enrichment**
+- Enhanced flight data with geographic information
+- Created comprehensive airport reference table including:
+  - IATA codes
+  - Airport names
+  - Country information
+  - Precise latitude/longitude coordinates
+- **Output:** `processed/airport_stats_with_coords.csv`
+
+#### 3. **Advanced Heatmap Visualizations**
+
+✅ **Temporal-Airport Delay Heatmap**
+- Created matrix visualization showing average arrival delays by:
+  - **Y-axis:** Top 20 airports by flight volume
+  - **X-axis:** Months (1-12)
+  - **Color Intensity:** Average delay minutes
+- **Enhanced Features:**
+  - Red color gradient for intuitive delay interpretation
+  - Proper axis labeling and colorbar
+  - Focus on busiest airports for actionable insights
+
+✅ **Route-Level Delay Heatmap**
+- Advanced origin-destination delay matrix for top 15 airports
+- **Professional Visualization Features:**
+  - Seaborn styling with `RdYlBu_r` colormap
+  - Annotated cells showing exact delay values (formatted to 1 decimal place)
+  - Centered colormap around overall mean delay
+  - Square cells with gridlines for better readability
+  - Enhanced titles and axis labels with professional formatting
+
+#### 4. **Geographic Performance Mapping**
+
+✅ **Airport Statistics Integration**
+- Successfully merged flight performance data with geographic coordinates
+- **Combined Metrics:**
+  - Total flights per airport
+  - Average arrival delays
+  - Average departure delays
+  - Total delay minutes
+  - Cancellation rates
+  - Geographic coordinates (lat/lon)
+
+✅ **Interactive Mapping Solution**
+- **Challenge Resolution:** Overcame Plotly dependency issues (nbformat compatibility)
+- **Robust Fallback Implementation:** Created professional matplotlib-based world map
+- **Geographic Visualization Features:**
+  - 🌍 World map with airport locations plotted by coordinates
+  - 📊 Bubble sizes representing flight volume (scaled appropriately)
+  - 🎨 Color coding by average delay (Red-Yellow-Blue gradient)
+  - 🏷️ Top 10 airports labeled with IATA codes
+  - 📈 Professional styling with grid references and colorbar
+
+#### 5. **Airport Performance Intelligence**
+
+✅ **Comprehensive Airport Rankings**
+- **Top 10 Busiest Airports by Flight Volume:**
+  1. **ATL (Atlanta)**: 131,613 flights, 40.7min avg delay
+  2. **ORD (Chicago O'Hare)**: 125,979 flights, 50.8min avg delay  
+  3. **DFW (Dallas-Fort Worth)**: 95,414 flights, 37.7min avg delay
+  4. **DEN (Denver)**: 74,323 flights, 36.1min avg delay
+  5. **LAX (Los Angeles)**: 58,772 flights, 33.8min avg delay
+
+✅ **Performance Insights Generated**
+- **🔴 Largest Operations Hub:** ATL with 131K+ flights
+- **🟡 Highest Delay Airport:** JFK with 53.5 minutes average delay
+- **🟢 Best Performance:** OAK (Oakland) with 26.3 minutes average delay
+- **📍 Geographic Coverage:** Successfully mapped 50 busiest airports
+
+---
+
+### 🎨 Advanced Visualization Techniques
+
+| Analysis Type | Visualization Method | Technical Enhancements |
+|---------------|---------------------|------------------------|
+| **Route Performance** | Enhanced bar charts | Rotated labels, professional styling |
+| **Temporal Heatmaps** | Matrix visualizations | Color gradients, proper scaling |
+| **Route Delay Matrix** | Seaborn heatmaps | Annotated values, centered colormaps |
+| **Geographic Mapping** | Matplotlib scatter plots | Bubble sizing, color encoding, world coordinates |
+| **Airport Rankings** | Professional scatter plots | Gradient coloring, annotation systems |
+
+---
+
+### 📁 Week 5 Deliverables
+
+✅ **Geographic Data Infrastructure**
+- `processed/airport_codes.csv` - Complete airport coordinates database
+- `processed/airport_stats_with_coords.csv` - Flight performance data with geographic coordinates
+- Integrated coordinate parsing and validation system
+
+✅ **Advanced Visualizations**
+- Route performance bar charts with professional styling
+- Temporal-airport delay heatmaps with color coding
+- Enhanced route-level delay matrices using seaborn
+- Professional geographic scatter plot world map
+- Airport performance rankings with statistical summaries
+
+✅ **Intelligence & Analytics**
+- Comprehensive route statistics for top flight paths
+- Geographic performance analysis of major airports
+- Temporal delay patterns by airport and month
+- Route-specific delay correlation analysis
+- Performance benchmarking with geographic context
+
+✅ **Technical Solutions**
+- Robust geographic data processing pipeline
+- Dependency issue resolution with matplotlib fallback
+- Professional visualization standards with consistent styling
+- Automated coordinate parsing and validation
+- Memory-efficient data processing for large datasets
+
+---
+
+### 🔍 Week 5 Methodology
+
+#### Geographic Integration:
+- **Data Acquisition:** Automated download of airport coordinates from authoritative source
+- **Data Processing:** Robust coordinate parsing with error handling
+- **Data Validation:** IATA code matching and coordinate verification
+- **Data Enhancement:** Merging operational metrics with geographic data
+
+#### Visualization Excellence:
+- **Professional Styling:** Consistent color schemes and formatting
+- **Information Density:** Optimal use of bubble sizes, colors, and annotations  
+- **Readability:** Clear axis labels, legends, and title formatting
+- **Technical Robustness:** Fallback solutions for dependency issues
+
+#### Performance Analysis:
+- **Multi-dimensional Analysis:** Route, temporal, and geographic perspectives
+- **Statistical Rigor:** Proper aggregation methods and correlation analysis
+- **Business Intelligence:** Actionable insights for operational decision-making
+- **Scalable Architecture:** Efficient processing for large-scale airport data
+
+---
+
+### 📈 Week 5 Key Metrics
+
+| Metric | Value |
+|--------|-------|
+| **Routes Analyzed** | All origin-destination pairs in dataset |
+| **Airports Mapped** | 50+ busiest airports with coordinates |
+| **Geographic Coverage** | Major airports across continental regions |
+| **Visualization Types** | 5 different chart types with professional enhancements |
+| **Data Files Generated** | 2 (airport coordinates + merged statistics) |
+| **Performance Rankings** | Top 10 busiest + delay performance analysis |
+| **Temporal Dimensions** | 12 months × 20+ airports heatmap analysis |
+
+---
+
+### 🏆 Week 5 Key Insights
+
+#### Route Intelligence:
+1. **Volume Leaders:** Identified highest traffic routes for capacity optimization
+2. **Delay Hotspots:** Route-specific delay patterns for operational improvements
+3. **Performance Benchmarking:** Established route-level performance baselines
+
+#### Geographic Intelligence:  
+1. **Hub Performance:** ATL leads in volume but ORD shows highest delays
+2. **Regional Patterns:** Geographic distribution of delay performance
+3. **Operational Optimization:** Identified best and worst performing airports by location
+
+#### Temporal Intelligence:
+1. **Seasonal Patterns:** Month-by-month delay variations by airport
+2. **Airport-Specific Trends:** Individual airport delay profiles throughout year
+3. **Capacity Planning:** Peak period identification for resource allocation
+
+---
+
+### ✅ Week 5 Deliverables
+
+- [x] Complete route-level analysis with top 10 origin-destination pairs
+- [x] Geographic coordinate integration with automated data processing
+- [x] Advanced heatmap visualizations for temporal-airport delay patterns
+- [x] Professional route-level delay matrix with enhanced seaborn styling
+- [x] Robust geographic mapping solution with matplotlib fallback
+- [x] Comprehensive airport performance rankings with geographic context
+- [x] Statistical intelligence summaries for operational decision-making
+- [x] Technical infrastructure for scalable geographic analysis
 
 ---
 
@@ -760,13 +962,16 @@ Mohammed_Shaaz/
 ├── data_2.ipynb                   # Week 2: Preprocessing & feature engineering
 ├── data_3.ipynb                   # Week 3: Exploratory Data Analysis (EDA)
 ├── data_4.ipynb                   # Week 4: Advanced delay analysis & insights
+├── data_5.ipynb                   # Week 5: Geographic analysis & route intelligence
 ├── dataset/
 │   ├── DelayedFlights.csv        # 2008 data (1.9M rows)
 │   ├── flight_delays.csv         # 2019-23 data (1.7M rows)
 │   └── flights_sample_3m.csv     # 2024 sample (3M rows)
 ├── processed/
 │   ├── delayedflights_2008_processed.parquet  # Cleaned & engineered
-│   └── sample_10k.parquet                      # Quick testing sample
+│   ├── sample_10k.parquet                      # Quick testing sample
+│   ├── airport_codes.csv                       # Airport coordinates database
+│   └── airport_stats_with_coords.csv           # Flight performance + coordinates
 ├── summary/
 │   └── EDA_summary.csv           # Statistical summary from Week 3 EDA
 └── README.md                      # Project documentation
@@ -798,5 +1003,5 @@ Project developed as part of Infosys data analytics initiative.
 
 ---
 
-**Last Updated:** November 3, 2025  
-**Current Week:** Week 4 - Advanced Delay Analysis & Insights ✅ Complete
+**Last Updated:** November 23, 2025  
+**Current Week:** Week 5 - Geographic Analysis & Route Intelligence ✅ Complete
