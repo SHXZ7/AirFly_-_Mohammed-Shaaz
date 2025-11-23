@@ -954,6 +954,235 @@ This project analyzes flight delay patterns across multiple datasets spanning fr
 
 ---
 
+## ❄️ Week 6 Report – Seasonal & Cancellation Analysis
+
+**Report Date:** November 23, 2025  
+**Status:** ✅ Completed
+
+### 🎯 Week 6 Goals
+- Analyze monthly cancellation trends and seasonal patterns
+- Break down cancellation types (Carrier, Weather, NAS, Security)
+- Assess impact of holidays and winter months on flight operations
+- Create seasonal visualizations for operational insights
+- Investigate route congestion effects on cancellation rates
+
+---
+
+### 📊 Seasonal & Cancellation Analysis Completed
+
+#### 1. **Monthly Cancellation Trends**
+
+✅ **Seasonal Cancellation Patterns**
+- Analyzed cancellation rates across all 12 months of 2008
+- **Key Finding:** Dramatic seasonal variation with winter concentration
+- **Pattern Identified:**
+  - **Jan-Sep**: Virtually zero cancellations (~0.00%)
+  - **October**: 0.05% cancellation rate
+  - **November**: 0.09% cancellation rate  
+  - **December**: 0.25% cancellation rate (peak)
+
+✅ **Cancellation Volume Analysis**
+- **Total Cancellations:** 633 out of 1,936,758 flights (0.03% overall rate)
+- **Seasonal Distribution:**
+  - Q4 (Oct-Dec): 633 cancellations (100% of total)
+  - Q1-Q3: 0 cancellations
+  - December alone: 480 cancellations (75.8% of annual total)
+
+#### 2. **Cancellation Type Breakdown**
+
+✅ **Root Cause Analysis**
+- Successfully mapped cancellation codes to meaningful categories
+- **Cancellation Type Distribution:**
+  - **🌦️ Weather**: 307 cancellations (48.5%) - Dominant cause
+  - **✈️ Carrier**: 246 cancellations (38.9%) - Operational issues  
+  - **🏢 NAS**: 80 cancellations (12.6%) - Air traffic control/system
+  - **🔒 Security**: 0 cancellations (0.0%) - No security-related cancellations
+
+✅ **Monthly Type Progression**
+- **October**: 59 total (Carrier 33, Weather 17, NAS 9)
+- **November**: 94 total (Carrier 41, Weather 40, NAS 13)
+- **December**: 480 total (Carrier 172, Weather 250, NAS 58)
+- **Clear Pattern:** Weather becomes increasingly dominant in winter months
+
+#### 3. **Winter vs Non-Winter Impact Analysis**
+
+✅ **Seasonal Comparison**
+- **Winter Months** (Dec, Jan, Feb): 0.083% cancellation rate
+- **Non-Winter Months** (Mar-Nov): 0.011% cancellation rate
+- **Impact Factor:** **7.4x higher** cancellation rate in winter
+- **Statistical Significance:** 480 winter cancellations vs 153 non-winter
+
+✅ **Winter Weather Dominance**
+- Weather-related cancellations concentrate heavily in winter period
+- Confirms expected seasonal airline operational challenges
+- Provides baseline for winter operational planning
+
+#### 4. **Holiday Impact Assessment**
+
+✅ **Holiday vs Normal Day Analysis**
+- **Holiday Dates Analyzed:** Dec 24, Dec 25, Dec 31, Jan 1, Nov 27 (Thanksgiving)
+- **Holiday Cancellation Rate:** 0.089% 
+- **Normal Day Rate:** 0.032%
+- **Holiday Impact:** **2.8x higher** cancellation rate on holidays
+- **Volume:** 25 holiday cancellations out of 28,017 holiday flights
+
+✅ **Holiday Pattern Insights**
+- Holidays show elevated but moderate impact compared to general winter effect
+- Winter weather remains primary driver rather than holiday-specific issues
+- Holiday effect compounds with winter seasonal challenges
+
+#### 5. **Route Congestion & Cancellation Correlation**
+
+✅ **Route Traffic Classification**
+- **Total Routes Analyzed:** 5,205 unique origin-destination pairs
+- **Congestion Categories:**
+  - **High Congestion:** 1,766 routes (33.9%) - Top traffic routes
+  - **Medium Congestion:** 1,721 routes (33.1%) - Moderate traffic
+  - **Low Congestion:** 1,718 routes (33.0%) - Light traffic routes
+
+✅ **Congestion Impact Results**
+- **High Congestion Routes:** 0.031% average cancellation rate
+- **Medium Congestion Routes:** 0.037% average cancellation rate  
+- **Low Congestion Routes:** 0.035% average cancellation rate
+- **Key Finding:** Medium-traffic routes show slightly higher cancellation vulnerability
+
+✅ **Top Route Examples**
+- **LAX-SFO:** 4,739 flights, 0 cancellations (0.000%)
+- **ORD-LGA:** 4,396 flights, 2 cancellations (0.045%)
+- **ATL-LGA:** 4,058 flights, 1 cancellation (0.025%)
+- High-volume routes generally maintain good reliability
+
+---
+
+### 📈 Advanced Statistical Insights
+
+#### Seasonal Intelligence:
+1. **Winter Concentration:** 75.8% of annual cancellations occur in December alone
+2. **Weather Dominance:** Weather causes nearly half of all cancellations (48.5%)
+3. **Operational Resilience:** 99.97% overall completion rate demonstrates robust operations
+
+#### Holiday Intelligence:
+1. **Moderate Holiday Effect:** 2.8x increase over normal days
+2. **Compounding Factors:** Holiday impact amplifies existing winter challenges
+3. **Peak Period Planning:** December holidays require enhanced operational preparation
+
+#### Route Intelligence:
+1. **Traffic Paradox:** Medium-congestion routes show highest cancellation rates
+2. **High-Volume Reliability:** Busiest routes maintain excellent performance
+3. **Route Optimization:** Some route classifications may benefit from capacity adjustments
+
+---
+
+### 🎨 Comprehensive Visualization Portfolio
+
+| Analysis Type | Visualization Method | Key Insights Revealed |
+|---------------|---------------------|----------------------|
+| **Monthly Trends** | Line plots with markers | Dramatic Q4 concentration |
+| **Cancellation Types** | Stacked bar charts | Weather dominance in winter |
+| **Seasonal Comparison** | Comparative bar charts | 7.4x winter impact factor |
+| **Holiday Analysis** | Binary comparison charts | 2.8x holiday effect |
+| **Route Congestion** | Category-based bar charts | Medium-route vulnerability |
+
+---
+
+### 📁 Week 6 Deliverables
+
+✅ **Seasonal Intelligence Framework**
+- Comprehensive monthly cancellation trend analysis
+- Winter vs non-winter statistical comparison
+- Holiday impact quantification and assessment
+- Route congestion correlation analysis
+
+✅ **Operational Decision Support**
+- **Winter Preparation Metrics:** 7.4x impact factor for resource planning
+- **Holiday Staffing Guidance:** 2.8x impact factor for peak periods
+- **Route Optimization Data:** Medium-congestion route performance insights
+- **Cancellation Type Priorities:** Weather (48.5%) and Carrier (38.9%) focus areas
+
+✅ **Advanced Analytics Implementation**
+- Robust data mapping and validation (fixed cancellation code handling)
+- Multi-dimensional analysis across temporal, seasonal, and operational dimensions
+- Statistical significance testing and impact factor calculations
+- Comprehensive verification and data integrity checks
+
+✅ **Business Intelligence Ready Insights**
+- Actionable seasonal planning recommendations
+- Quantified impact factors for operational scaling
+- Route-specific performance benchmarking
+- Weather vs operational cancellation prioritization framework
+
+---
+
+### 🔍 Week 6 Methodology
+
+#### Data Quality Assurance:
+- **Critical Fix:** Corrected cancellation code mapping (added "N" = None mapping)
+- **Validation:** Verified total cancellation counts match across all analyses
+- **Integrity Checks:** Confirmed percentage breakdowns sum to 100%
+
+#### Statistical Rigor:
+- **Impact Factors:** Calculated precise multiplier effects (7.4x winter, 2.8x holiday)
+- **Segmentation Analysis:** Proper categorization of seasonal, holiday, and congestion factors  
+- **Trend Analysis:** Month-by-month progression tracking
+- **Correlation Assessment:** Route congestion vs cancellation rate relationships
+
+#### Visualization Excellence:
+- **Trend Clarity:** Clear seasonal patterns with appropriate scaling
+- **Comparative Analysis:** Side-by-side winter/holiday comparisons
+- **Category Breakdown:** Stacked visualizations showing type distributions
+- **Professional Styling:** Consistent formatting and meaningful color coding
+
+---
+
+### 📈 Week 6 Key Metrics
+
+| Metric | Value |
+|--------|-------|
+| **Total Cancellations Analyzed** | 633 across 1.9M flights |
+| **Seasonal Periods Compared** | Winter vs Non-Winter (9 months each) |
+| **Holiday Dates Assessed** | 5 major holidays |
+| **Routes Categorized** | 5,205 unique routes by congestion level |
+| **Cancellation Types Identified** | 4 primary categories (Weather, Carrier, NAS, Security) |
+| **Peak Impact Factor** | 7.4x (Winter vs Non-Winter) |
+| **Time Series Analysis** | 12 months of detailed progression |
+
+---
+
+### 🏆 Week 6 Key Findings
+
+#### Critical Seasonal Insights:
+1. **Q4 Concentration:** 100% of 2008 cancellations occurred in Oct-Dec
+2. **December Dominance:** 75.8% of annual cancellations in single month
+3. **Weather Leadership:** Nearly half of all cancellations weather-related
+4. **Operational Excellence:** 99.97% overall flight completion rate
+
+#### Actionable Business Intelligence:
+1. **Winter Scaling:** Operations need 7.4x cancellation management capacity
+2. **Weather Priority:** Weather-related contingency planning most critical
+3. **Holiday Preparation:** 2.8x resource scaling for holiday periods
+4. **Route Optimization:** Medium-congestion routes may need capacity review
+
+#### Strategic Planning Framework:
+1. **Seasonal Resource Allocation:** Data-driven winter staffing models
+2. **Weather Contingency Planning:** Evidence-based weather response protocols
+3. **Holiday Operations Management:** Quantified holiday impact planning
+4. **Route Performance Optimization:** Congestion-based route efficiency improvements
+
+---
+
+### ✅ Week 6 Deliverables
+
+- [x] Complete monthly cancellation trend analysis with seasonal patterns
+- [x] Comprehensive cancellation type breakdown with weather dominance insights
+- [x] Winter vs non-winter statistical comparison (7.4x impact factor)
+- [x] Holiday vs normal day analysis (2.8x impact factor)  
+- [x] Route congestion correlation analysis across 5,205+ routes
+- [x] Advanced data quality fixes and validation framework
+- [x] Business intelligence ready seasonal planning metrics
+- [x] Statistical significance testing and impact factor quantification
+
+---
+
 ### 📂 Project Structure
 
 ```
@@ -963,6 +1192,7 @@ Mohammed_Shaaz/
 ├── data_3.ipynb                   # Week 3: Exploratory Data Analysis (EDA)
 ├── data_4.ipynb                   # Week 4: Advanced delay analysis & insights
 ├── data_5.ipynb                   # Week 5: Geographic analysis & route intelligence
+├── data_6.ipynb                   # Week 6: Seasonal & cancellation analysis
 ├── dataset/
 │   ├── DelayedFlights.csv        # 2008 data (1.9M rows)
 │   ├── flight_delays.csv         # 2019-23 data (1.7M rows)
@@ -1004,4 +1234,4 @@ Project developed as part of Infosys data analytics initiative.
 ---
 
 **Last Updated:** November 23, 2025  
-**Current Week:** Week 5 - Geographic Analysis & Route Intelligence ✅ Complete
+**Current Week:** Week 6 - Seasonal & Cancellation Analysis ✅ Complete
